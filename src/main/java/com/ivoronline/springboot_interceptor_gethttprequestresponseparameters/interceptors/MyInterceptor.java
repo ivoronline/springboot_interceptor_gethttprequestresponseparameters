@@ -1,6 +1,5 @@
 package com.ivoronline.springboot_interceptor_gethttprequestresponseparameters.interceptors;
 
-
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
