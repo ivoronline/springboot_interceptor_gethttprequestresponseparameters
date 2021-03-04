@@ -3,6 +3,7 @@ package com.ivoronline.springboot_interceptor_gethttprequestresponseparameters.i
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -21,15 +22,6 @@ public class MyInterceptor implements HandlerInterceptor {
     System.out.println(request.getServerPort());          //8080
     System.out.println(request.getParameter("username")); //myuser
     return true;
-  }
-
-  //====================================================================
-  // POST HANDLE
-  //====================================================================
-  @Override
-  public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) {
-    System.out.println("MyInterceptor: postHandle()      ");
-    System.out.println(response.getStatus());   //200
   }
 
   //====================================================================
